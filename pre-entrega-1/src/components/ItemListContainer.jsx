@@ -3,7 +3,7 @@ const ItemListContainer = ({mensaje}) => {
         <div className="container py-5">
             <div className="row">
                 <div className="col text-light-emphasis text-center">
-                    <h2 style={{color:"orchid"}}>{mensaje}</h2>
+                    <h3 style={{color:"LightSeaGreen"}}>{mensaje}</h3>
                 </div>
             </div>
         </div>

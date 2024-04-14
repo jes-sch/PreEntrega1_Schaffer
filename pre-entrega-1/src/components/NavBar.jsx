@@ -8,7 +8,7 @@ const NavBar = () => {
                 <div className="col"></div>
                 <div className="col-md text-center">
                     <a href="#">
-                        <img src={logo} alt="logo de la marca" width={345}/>
+                        <img src={logo} alt="logo de la marca" width={330}/>
                     </a>
                 </div>
                 <div className="col d-flex align-items-center justify-content-end">
@@ -19,25 +19,25 @@ const NavBar = () => {
                 <div className="col">
                 <ul className="nav nav-pills justify-content-center">
                     <li className="nav-item">
-                        <a className="nav-link text-dark" aria-current="page" href="#">HOME</a>
+                        <a className="nav-link text-secondary textoNavbar" aria-current="page" href="#">HOME</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-dark" href="#">STICKERS</a>
+                        <a className="nav-link text-secondary textoNavbar" href="#">STICKERS</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-dark" href="#">CUADERNOS</a>
+                        <a className="nav-link text-secondary textoNavbar" href="#">CUADERNOS</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-dark" href="#">LLAVEROS</a>
+                        <a className="nav-link text-secondary textoNavbar" href="#">LLAVEROS</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-dark" href="#">LÁMINAS Y PRINTS</a>
+                        <a className="nav-link text-secondary textoNavbar" href="#">LÁMINAS Y PRINTS</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-dark" href="#">TOTE BAGS</a>
+                        <a className="nav-link text-secondary textoNavbar" href="#">TOTE BAGS</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-dark" href="#">KITS IMPRIMIBLES</a>
+                        <a className="nav-link text-secondary textoNavbar" href="#">KITS IMPRIMIBLES</a>
                     </li>
                     </ul>
                 </div>

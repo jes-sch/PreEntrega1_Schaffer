@@ -8,7 +8,7 @@ function App() {
     <>
     <NavBar />
     <CartWidget />
-    <ItemListContainer mensaje={"Bienvenid@ a mi tienda online ♡"}/>
+    <ItemListContainer mensaje={"♡ El color que tus días necesitan ♡"} />
     <Footer />
     </>
   )
