@@ -1,5 +1,9 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 #bienvenida{
@@ -30,5 +34,33 @@
 .textoFooter {
     color: DimGray;
     font-size: 13px;
-    font-weight: lighter;
 }
+
+.redes {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1.5px solid orchid;
+    box-shadow: 6px 6px 6px pink;
+    padding: 20px 0;
+  }
+  .redes.redes a {
+    color: LightSeaGreen;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px #5F9EA0;
+    text-align: center;
+  }
+  .redes.redes i {
+    font-size: 2rem;
+  }
+  
+  .footer__iconos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
