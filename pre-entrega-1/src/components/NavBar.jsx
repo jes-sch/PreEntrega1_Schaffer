@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import CartWidget from "./CartWidget";
 
@@ -24,22 +23,22 @@ const NavBar = () => {
                         <NavLink className="nav-link text-secondary textoNavbar" aria-current="page" to={"/"}>HOME</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/stickers"}>STICKERS</NavLink>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/cuaderno"}>CUADERNOS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/cuadernos"}>CUADERNOS</NavLink>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/imprimible"}>KITS IMPRIMIBLES</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/llaveros"}>LLAVEROS</NavLink>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/llavero"}>LLAVEROS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/laminasyprints"}>LÁMINAS Y PRINTS</NavLink>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/print"}>LÁMINAS Y PRINTS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/totebags"}>TOTE BAGS</NavLink>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/sticker"}>STICKER</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/imprimibles"}>KITS IMPRIMIBLES</NavLink>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/tote"}>TOTE BAGS</NavLink>
                     </li>
                     </ul>
                 </div>

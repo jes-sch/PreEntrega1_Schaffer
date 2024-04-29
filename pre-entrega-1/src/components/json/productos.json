@@ -13,7 +13,7 @@
         "nombre": "Imprimibles",
         "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
         "precio": 3000,
-        "imagen": "./images/imprimibles.jpeg",
+        "imagen": "./images/imprimibles.jpg",
         "stock": 5,
         "categoria": "imprimible"
     },
