@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cuadernos",
+        "descripcion": "Pensados y diseñados para alegrar tus días y acompañarte en la facu, colegio, haciendo journaling y escribiendo tus declaraciones positivas. Tamaños: A5 & A6",
+        "precio": 5000,
+        "imagen": "./images/cuadernos.jpg",
+        "stock": 2,
+        "categoria": "cuaderno"
+    },
+    {
+        "id": 2,
+        "nombre": "Imprimibles",
+        "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
+        "precio": 3000,
+        "imagen": "./images/imprimibles.jpeg",
+        "stock": 5,
+        "categoria": "imprimible"
+    },
+    {
+        "id": 3,
+        "nombre": "Llaveros",
+        "descripcion": "Cuatro modelos impresos en acrílico con sus cadenitas hiper resistentes :). Los modelos son: mariposa pink, leopardo, self love & mariposa green. Cuál es tu favorito?",
+        "precio": 2500,
+        "imagen": "./images/llaveros.jpg",
+        "stock": 4,
+        "categoria": "llavero"
+    },
+    {
+        "id": 4,
+        "nombre": "Prints",
+        "descripcion": "Láminas y Prints con mis ilustraciones. Nuevos diseños y formatos; impresos en papel ilustración de 300 gramos",
+        "precio": 3000,
+        "imagen": "./images/print.jpg",
+        "stock": 2,
+        "categoria": "print"
+    },
+    {
+        "id": 5,
+        "nombre": "Stickers",
+        "descripcion": "La colección de stickers más coloridos y brillantes, podés elegir holográficos o vinílicos",
+        "precio": 2000,
+        "imagen": "./images/sticker.jpg",
+        "stock": 5,
+        "categoria": "sticker"
+    },
+    {
+        "id": 6,
+        "nombre": "Tote Bags",
+        "descripcion": "Todas las Tote Bags están pintadas a mano, sobre lienzo. Hay tres tamaños distintos y un montón de diseños a elección! (También podes elegir la opción personalizada)",
+        "precio": 8000,
+        "imagen": "./images/tote.jpg",
+        "stock": 3,
+        "categoria": "tote"
+    }
+]

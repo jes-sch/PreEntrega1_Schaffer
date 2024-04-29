@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.png";
 import CartWidget from "./CartWidget";
 
@@ -7,9 +9,9 @@ const NavBar = () => {
             <div className="row bg-danger-subtle p-3">
                 <div className="col"></div>
                 <div className="col-md text-center">
-                    <a href="#">
-                        <img src={logo} alt="logo de la marca" width={330}/>
-                    </a>
+                    <Link to={"/"}>
+                        <img src={logo} alt="Tienda de Lari" width={330}/>
+                    </Link>
                 </div>
                 <div className="col d-flex align-items-center justify-content-end">
                     <CartWidget />
@@ -17,27 +19,27 @@ const NavBar = () => {
             </div>
             <div className="row">
                 <div className="col">
-                <ul className="nav nav-pills justify-content-center">
+                <ul className="nav justify-content-center">
                     <li className="nav-item">
-                        <a className="nav-link text-secondary textoNavbar" aria-current="page" href="#">HOME</a>
+                        <NavLink className="nav-link text-secondary textoNavbar" aria-current="page" to={"/"}>HOME</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary textoNavbar" href="#">STICKERS</a>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/stickers"}>STICKERS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary textoNavbar" href="#">CUADERNOS</a>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/cuadernos"}>CUADERNOS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary textoNavbar" href="#">LLAVEROS</a>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/llaveros"}>LLAVEROS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary textoNavbar" href="#">LÁMINAS Y PRINTS</a>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/laminasyprints"}>LÁMINAS Y PRINTS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary textoNavbar" href="#">TOTE BAGS</a>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/totebags"}>TOTE BAGS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-secondary textoNavbar" href="#">KITS IMPRIMIBLES</a>
+                        <NavLink className="nav-link text-secondary textoNavbar" to={"/category/imprimibles"}>KITS IMPRIMIBLES</NavLink>
                     </li>
                     </ul>
                 </div>
