@@ -64,3 +64,15 @@
     flex-direction: row;
     gap: 10px;
   }
+
+  .subir {
+    height:350px;
+    width: 35px;
+    color: orchid !important;
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    text-align: center;
+    font-size: 6em;
+    font-weight: bold;
+}
