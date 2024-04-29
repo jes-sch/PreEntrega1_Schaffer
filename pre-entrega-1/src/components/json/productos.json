@@ -4,7 +4,7 @@
         "nombre": "Cuadernos",
         "descripcion": "Pensados y diseñados para alegrar tus días y acompañarte en la facu, colegio, haciendo journaling y escribiendo tus declaraciones positivas. Tamaños: A5 & A6",
         "precio": 5000,
-        "imagen": "./images/cuadernos.jpg",
+        "imagen": "cuadernos.jpg",
         "stock": 2,
         "categoria": "cuaderno"
     },
@@ -13,7 +13,7 @@
         "nombre": "Imprimibles",
         "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
         "precio": 3000,
-        "imagen": "./images/imprimibles.jpg",
+        "imagen": "imprimibles.jpg",
         "stock": 5,
         "categoria": "imprimible"
     },
@@ -22,7 +22,7 @@
         "nombre": "Llaveros",
         "descripcion": "Cuatro modelos impresos en acrílico con sus cadenitas hiper resistentes :). Los modelos son: mariposa pink, leopardo, self love & mariposa green. Cuál es tu favorito?",
         "precio": 2500,
-        "imagen": "./images/llaveros.jpg",
+        "imagen": "llaveros.jpg",
         "stock": 4,
         "categoria": "llavero"
     },
@@ -31,7 +31,7 @@
         "nombre": "Prints",
         "descripcion": "Láminas y Prints con mis ilustraciones. Nuevos diseños y formatos; impresos en papel ilustración de 300 gramos",
         "precio": 3000,
-        "imagen": "./images/print.jpg",
+        "imagen": "print.jpg",
         "stock": 2,
         "categoria": "print"
     },
@@ -40,7 +40,7 @@
         "nombre": "Stickers",
         "descripcion": "La colección de stickers más coloridos y brillantes, podés elegir holográficos o vinílicos",
         "precio": 2000,
-        "imagen": "./images/sticker.jpg",
+        "imagen": "sticker.jpg",
         "stock": 5,
         "categoria": "sticker"
     },
@@ -49,8 +49,116 @@
         "nombre": "Tote Bags",
         "descripcion": "Todas las Tote Bags están pintadas a mano, sobre lienzo. Hay tres tamaños distintos y un montón de diseños a elección! (También podes elegir la opción personalizada)",
         "precio": 8000,
-        "imagen": "./images/tote.jpg",
+        "imagen": "tote.jpg",
         "stock": 3,
         "categoria": "tote"
+    },
+    {
+        "id": 7,
+        "nombre": "Tote Bags",
+        "descripcion": "Todas las Tote Bags están pintadas a mano, sobre lienzo. Hay tres tamaños distintos y un montón de diseños a elección! (También podes elegir la opción personalizada)",
+        "precio": 1600,
+        "imagen": "tote2.jpg",
+        "stock": 2,
+        "categoria": "tote"
+    },
+    {
+        "id": 8,
+        "nombre": "Prints",
+        "descripcion": "Láminas y Prints con mis ilustraciones. Nuevos diseños y formatos; impresos en papel ilustración de 300 gramos",
+        "precio": 3000,
+        "imagen": "print2.jpg",
+        "stock": 2,
+        "categoria": "print"
+    },
+    {
+        "id": 9,
+        "nombre": "Prints",
+        "descripcion": "Láminas y Prints con mis ilustraciones. Nuevos diseños y formatos; impresos en papel ilustración de 300 gramos",
+        "precio": 3000,
+        "imagen": "print3.jpg",
+        "stock": 2,
+        "categoria": "print"
+    },
+    {
+        "id": 10,
+        "nombre": "Llaveros",
+        "descripcion": "Cuatro modelos impresos en acrílico con sus cadenitas hiper resistentes :). Los modelos son: mariposa pink, leopardo, self love & mariposa green. Cuál es tu favorito?",
+        "precio": 2500,
+        "imagen": "llavero2.jpg",
+        "stock": 4,
+        "categoria": "llavero"
+    },
+    {
+        "id": 11,
+        "nombre": "Llaveros",
+        "descripcion": "Cuatro modelos impresos en acrílico con sus cadenitas hiper resistentes :). Los modelos son: mariposa pink, leopardo, self love & mariposa green. Cuál es tu favorito?",
+        "precio": 2500,
+        "imagen": "llavero3.jpg",
+        "stock": 4,
+        "categoria": "llavero"
+    },
+    {
+        "id": 12,
+        "nombre": "Stickers",
+        "descripcion": "La colección de stickers más coloridos y brillantes, podés elegir holográficos o vinílicos",
+        "precio": 2000,
+        "imagen": "sticker2.jpg",
+        "stock": 5,
+        "categoria": "sticker"
+    },
+    {
+        "id": 13,
+        "nombre": "Stickers",
+        "descripcion": "La colección de stickers más coloridos y brillantes, podés elegir holográficos o vinílicos",
+        "precio": 2000,
+        "imagen": "sticker3.jpg",
+        "stock": 5,
+        "categoria": "sticker"
+    },
+    {
+        "id": 14,
+        "nombre": "Stickers",
+        "descripcion": "La colección de stickers más coloridos y brillantes, podés elegir holográficos o vinílicos",
+        "precio": 2000,
+        "imagen": "sticker.jpg",
+        "stock": 5,
+        "categoria": "sticker4"
+    },
+    {
+        "id": 15,
+        "nombre": "Imprimibles",
+        "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
+        "precio": 3000,
+        "imagen": "imprimibles2.jpg",
+        "stock": 5,
+        "categoria": "imprimible"
+    },
+    {
+        "id": 16,
+        "nombre": "Imprimibles",
+        "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
+        "precio": 3000,
+        "imagen": "imprimibles3.jpg",
+        "stock": 5,
+        "categoria": "imprimible"
+    },
+    {
+        "id": 17,
+        "nombre": "Imprimibles",
+        "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
+        "precio": 3000,
+        "imagen": "imprimibles4.jpg",
+        "stock": 5,
+        "categoria": "imprimible"
+    },
+    {
+        "id": 18,
+        "nombre": "Cuadernos",
+        "descripcion": "Pensados y diseñados para alegrar tus días y acompañarte en la facu, colegio, haciendo journaling y escribiendo tus declaraciones positivas. Tamaños: A5 & A6",
+        "precio": 5000,
+        "imagen": "cuadernos2.jpg",
+        "stock": 2,
+        "categoria": "cuaderno"
     }
 ]
