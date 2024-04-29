@@ -8,9 +8,9 @@ const ItemDetail = ({item}) => {
                     <img src={item.imagen} className="img-fluid" alt={item.nombre} />
                 </div>
                 <div className="col-md-4">
-                    <h1 className="fs-3 text-uppercase fw-semibold">{item.nombre}</h1>
-                    <p className="fs-4 fw-bold">${item.precio}</p>
-                    <p className="small">{item.descripcion}</p>
+                    <h1 className="card-text small text-uppercase fs-3 fw-bold" style={{color:"DarkViolet"}}>{item.nombre}</h1>
+                    <p className="card-text fs-4" style={{color:"LightSeaGreen"}}>${item.precio}</p>
+                    <p className="card-text fs-5" style={{color:"Orchid"}}>{item.descripcion}</p>
                     <ItemCount stock={item.stock} />
                 </div>
             </div>
