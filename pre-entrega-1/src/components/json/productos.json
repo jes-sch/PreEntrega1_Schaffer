@@ -142,23 +142,5 @@
         "imagen": "imprimibles3.jpg",
         "stock": 5,
         "categoria": "imprimible"
-    },
-    {
-        "id": 17,
-        "nombre": "Imprimibles",
-        "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
-        "precio": 3000,
-        "imagen": "imprimibles4.jpg",
-        "stock": 5,
-        "categoria": "imprimible"
-    },
-    {
-        "id": 18,
-        "nombre": "Cuadernos",
-        "descripcion": "Pensados y diseñados para alegrar tus días y acompañarte en la facu, colegio, haciendo journaling y escribiendo tus declaraciones positivas. Tamaños: A5 & A6",
-        "precio": 5000,
-        "imagen": "cuadernos2.jpg",
-        "stock": 2,
-        "categoria": "cuaderno"
     }
 ]

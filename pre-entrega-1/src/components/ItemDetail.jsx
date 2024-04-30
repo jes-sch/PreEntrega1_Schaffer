@@ -5,7 +5,7 @@ const ItemDetail = ({item}) => {
         <div className="container">
             <div className="row">
                 <div className="col-md-4 offset-md-2">
-                    <img src={item.imagen} className="img-fluid" alt={item.nombre} />
+                    <img src={"../../images/" + item.imagen} className="img-fluid rounded-4" alt={item.nombre} />
                 </div>
                 <div className="col-md-4">
                     <h1 className="card-text small text-uppercase fs-3 fw-bold" style={{color:"DarkViolet"}}>{item.nombre}</h1>

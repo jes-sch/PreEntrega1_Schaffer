@@ -20,11 +20,10 @@ const ItemListContainer = () => {
     }, [id])
 
     return (
-        <div className="container py-5">
-            <div className="row">
-                <div className="col text-light-emphasis text-center">
-                    <ItemList items={items} />
-                </div>
+
+        <div className="container">
+            <div className="row my-5 text-light-emphasis text-center">
+                <ItemList items={items} />
             </div>
         </div>
     )
