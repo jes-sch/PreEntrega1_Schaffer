@@ -5,9 +5,11 @@ import ItemDetailContainer from "./components/ItemDetailContainer";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Error404 from "./components/Error404";
+import CartContextProvider from "./components/context/CartContext";
 
 function App() {
   return (
+    <CartContextProvider>
     <BrowserRouter>
       <NavBar />
       <Routes>
@@ -19,6 +21,7 @@ function App() {
       <Banner />
       <Footer />
     </BrowserRouter>
+    </CartContextProvider>
   )
 }
 
