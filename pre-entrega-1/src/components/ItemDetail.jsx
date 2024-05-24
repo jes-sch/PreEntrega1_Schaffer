@@ -3,7 +3,7 @@ import ItemCount from "./ItemCount";
 const ItemDetail = ({item}) => {
 
 const onAdd = (quantity) => {
-    console.log("Agregaste " + quantity + "productos al carrito 🏹");
+    console.log("Agregaste " + quantity + " productos al carrito 🏹");
 }
 
     return (
