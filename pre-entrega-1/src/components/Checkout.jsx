@@ -7,6 +7,7 @@ const Checkout = () => {
     const [nombre, setNombre] = useState("");
     const [email, setEmail] = useState("");
     const [telephone, setTelephone] = useState("");
+    const [orderId, setOrderId] = useState("");
 
     useEffect(() => {
         const promesa = new Promise(resolve => {
@@ -28,12 +29,11 @@ const Checkout = () => {
         const buyer = {nombre:nombre, email:email, telephone:telephone};
         const items = cart.map(item => ({id:item.id, title:item.nombre, price:item.precio}));
         const order = {buyer:buyer, items:items, total:calcularTotal()}
-        console.log(order);
         const db = getFirestore();
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then(data => {
-            console.log(data);
-        })
+            setOrderId(data.id);
+        });
     }
     
     return (
@@ -72,6 +72,11 @@ const Checkout = () => {
                                 </tr>
                         </tbody>
                     </table>    
+                </div>
+            </div>
+            <div className="row my-4">
+                <div className="col text-center">
+                {orderId ? <div className="alert alert-info" role="alert">✍🏽 Se generó el siguiente ID a tu compra: <b>{orderId}</b></div> : ""}
                 </div>
             </div>
         </div>
