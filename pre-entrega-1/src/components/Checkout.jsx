@@ -1,60 +1,50 @@
-import { useEffect, useState } from "react";
-//import arrayProductos from "./json/productos.json";
+import { useContext, useEffect, useState } from "react";
+import { CartContext } from "./context/CartContext";
 import { addDoc, collection, getDocs, getFirestore} from "firebase/firestore";
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
-    const [cart, setCart] = useState([]);
+    const {cart, getCountProducts, getSumProducts} = useContext(CartContext);
     const [nombre, setNombre] = useState("");
     const [email, setEmail] = useState("");
     const [telephone, setTelephone] = useState("");
     const [orderId, setOrderId] = useState("");
 
-    /* useEffect(() => {
-        const promesa = new Promise(resolve => {
-            setTimeout(() => {
-                resolve(arrayProductos.filter(item => item.precio < 2500));
-            }, 2000)
-        });
-        
-        promesa.then(respuesta => {
-            setCart(respuesta);
-        })
-    }, []); */
-
-        // Cargo los productos vía FireStore
-        useEffect(() => {
-        const db = getFirestore();
-        const itemsCollection = collection(db, "items");
-        getDocs(itemsCollection).then(snapShot => {
-            if (snapShot.size > 0) {
-                setCart(snapShot.docs.map(item => ({id:item.id, ...item.data()})));
-            }
-        });
-    }, []);
-
-    const calcularTotal = () => {
-        return cart.reduce((acumulador, item) => acumulador += item.precio, 0);
-    }
-    
     const generarOrden = () => {
         const buyer = {nombre:nombre, email:email, telephone:telephone};
         const items = cart.map(item => ({id:item.id, title:item.nombre, price:item.precio}));
-        const order = {buyer:buyer, items:items, total:calcularTotal()}
-        
+        const date = new Date();
+        const currentDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+        const order = {buyer:buyer, items:items, date:currentDate, total:getSumProducts()};
+
         // Para agregar un nuevo Documento a Firestore:
         const db = getFirestore();
         const ordersCollection = collection(db, "orders");
-        addDoc(ordersCollection, order).then(data => {
-            setOrderId(data.id);
-        });
+            addDoc(ordersCollection, order).then(data => {
+                setOrderId(data.id);
+            });
 
-        // Para agregar todos los productos mi array JSON a mi BD Firestore
-        /* const db = getFirestore();
-        const itemsCollection = collection(db, "items");
-        arrayProductos.forEach(item => {
-            addDoc(itemsCollection, item);
-        })
-        console.log("PRUEBA SUPERADA : PRODUCTOS COMPLETAMENTE CARGADOS"); */
+    // Para agregar todos los productos mi array JSON a mi BD Firestore
+    /* const db = getFirestore();
+    const itemsCollection = collection(db, "items");
+    arrayProductos.forEach(item => {
+        addDoc(itemsCollection, item);
+    })
+    console.log("PRUEBA SUPERADA : PRODUCTOS COMPLETAMENTE CARGADOS"); */
+
+    }
+
+    if (getCountProducts() == 0) {
+        return (
+            <div className="container my-5">
+                <div className="row">
+                    <div className="col text-center">
+                        <h3 style={{color:"DarkViolet"}}>❌ No hay productos en el Carrito ❌</h3>
+                        <Link to={"/"} className="btn btn-lg btn-info text-white my-5">Volver a la PÁGINA PRINCIPAL 🎀</Link>
+                    </div>
+                </div>
+            </div>
+        )
     }
     
     return (
@@ -89,7 +79,7 @@ const Checkout = () => {
                             ))}
                                 <tr>
                                     <td style={{color:"OrLightSeaGreenchid"}} colSpan={2}><b>Total</b></td>
-                                    <td className="text-end"><b>$ {calcularTotal()}</b></td>
+                                    <td className="text-end"><b>$ {getSumProducts()}</b></td>
                                 </tr>
                         </tbody>
                     </table>    
@@ -105,49 +95,3 @@ const Checkout = () => {
 }
 
 export default Checkout;
-
-   
-
-/*
-
-const Checkout = () => {
-    const {cart, getCountProducts, getSumProducts} = useContext(CartContext);
-    const [nombre, setNombre] = useState("");
-    const [email, setEmail] = useState("");
-    const [telephone, setTelephone] = useState("");
-    const [orderId, setOrderId] = useState("");
-
-    const generarOrden = () => {
-        const buyer = {nombre:nombre, email:email, telephone:telephone};
-        const items = cart.map(item => ({id:item.id, title:item.nombre, price:item.precio}));
-        const date = new Date();
-        const currentDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-        const order = {buyer:buyer, items:items, date:currentDate, total:getSumProducts()};
-        
-        // Agrego un nuevo Documento a la Colección Orders
-        const db = getFirestore();
-        const ordersCollection = collection(db, "orders");
-        addDoc(ordersCollection, order).then(data => {
-            setOrderId(data.id);
-        });
-
-        const itemsCollection = collection(db, "item");
-
-        arrayProductos.array.forEach(item => {
-            addDoc(items, item);
-        });
-
-    }
-
-    if (getCountProducts() == 0) {
-        return (
-            <div className="container my-5">
-                <div className="row">
-                    <div className="col text-center">
-                        <h3>❌ No hay productos en el Carrito ❌</h3>
-                        <Link to={"/"} className="btn text-white bg-dark rounded-0 my-5">Volver a la PÁGINA PRINCIPAL 🎀</Link>
-                    </div>
-                </div>
-            </div>
-        )
-    } */
