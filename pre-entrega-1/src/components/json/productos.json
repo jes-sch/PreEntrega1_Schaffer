@@ -1,132 +1,132 @@
 [
     {
-        "id": 1,
+        "idjson": 1,
         "nombre": "Cuadernos",
         "descripcion": "Pensados y diseñados para alegrar tus días y acompañarte en la facu, colegio, haciendo journaling y escribiendo tus declaraciones positivas. Tamaños: A5 & A6",
         "precio": 5000,
         "imagen": "cuadernos.jpg",
-        "stock": 2,
+        "stock": 5,
         "categoria": "cuaderno"
     },
     {
-        "id": 2,
+        "idjson": 2,
         "nombre": "Imprimibles",
         "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
         "precio": 3000,
         "imagen": "imprimibles.jpg",
-        "stock": 5,
+        "stock": 4,
         "categoria": "imprimible"
     },
     {
-        "id": 3,
+        "idjson": 3,
         "nombre": "Llaveros",
         "descripcion": "Cuatro modelos impresos en acrílico con sus cadenitas hiper resistentes :). Los modelos son: mariposa pink, leopardo, self love & mariposa green. Cuál es tu favorito?",
         "precio": 2500,
         "imagen": "llaveros.jpg",
-        "stock": 4,
+        "stock": 10,
         "categoria": "llavero"
     },
     {
-        "id": 4,
+        "idjson": 4,
         "nombre": "Prints",
         "descripcion": "Láminas y Prints con mis ilustraciones. Nuevos diseños y formatos; impresos en papel ilustración de 300 gramos",
         "precio": 3000,
         "imagen": "print.jpg",
-        "stock": 2,
+        "stock": 4,
         "categoria": "print"
     },
     {
-        "id": 5,
+        "idjson": 5,
         "nombre": "Stickers",
-        "descripcion": "La colección de stickers más colorididos y brillantes, podés elegir holográficos o vinílicos",
+        "descripcion": "La colección de stickers más coloridjsonidjsonos y brillantes, podés elegir holográficos o vinílicos",
         "precio": 2000,
         "imagen": "sticker.jpg",
-        "stock": 5,
+        "stock": 15,
         "categoria": "sticker"
     },
     {
-        "id": 6,
+        "idjson": 6,
         "nombre": "Tote Bags",
         "descripcion": "Todas las Tote Bags están pintadas a mano, sobre lienzo. Hay tres tamaños distintos y un montón de diseños a elección! (También podes elegir la opción personalizada)",
         "precio": 8000,
         "imagen": "tote.jpg",
-        "stock": 3,
+        "stock": 4,
         "categoria": "tote"
     },
     {
-        "id": 7,
+        "idjson": 7,
         "nombre": "Tote Bags",
         "descripcion": "Todas las Tote Bags están pintadas a mano, sobre lienzo. Hay tres tamaños distintos y un montón de diseños a elección! (También podes elegir la opción personalizada)",
         "precio": 1600,
         "imagen": "tote2.jpg",
-        "stock": 2,
+        "stock": 3,
         "categoria": "tote"
     },
     {
-        "id": 8,
+        "idjson": 8,
         "nombre": "Prints",
         "descripcion": "Láminas y Prints con mis ilustraciones. Nuevos diseños y formatos; impresos en papel ilustración de 300 gramos",
         "precio": 3000,
         "imagen": "print2.jpg",
-        "stock": 2,
+        "stock": 5,
         "categoria": "print"
     },
     {
-        "id": 9,
+        "idjson": 9,
         "nombre": "Prints",
         "descripcion": "Láminas y Prints con mis ilustraciones. Nuevos diseños y formatos; impresos en papel ilustración de 300 gramos",
         "precio": 3000,
         "imagen": "print3.jpg",
-        "stock": 2,
+        "stock": 5,
         "categoria": "print"
     },
     {
-        "id": 10,
+        "idjson": 10,
         "nombre": "Llaveros",
         "descripcion": "Cuatro modelos impresos en acrílico con sus cadenitas hiper resistentes :). Los modelos son: mariposa pink, leopardo, self love & mariposa green. Cuál es tu favorito?",
         "precio": 2500,
         "imagen": "llavero2.jpg",
-        "stock": 4,
+        "stock": 10,
         "categoria": "llavero"
     },
     {
-        "id": 11,
+        "idjson": 11,
         "nombre": "Llaveros",
         "descripcion": "Cuatro modelos impresos en acrílico con sus cadenitas hiper resistentes :). Los modelos son: mariposa pink, leopardo, self love & mariposa green. Cuál es tu favorito?",
         "precio": 2500,
         "imagen": "llavero3.jpg",
-        "stock": 4,
+        "stock": 8,
         "categoria": "llavero"
     },
     {
-        "id": 12,
+        "idjson": 12,
         "nombre": "Stickers",
-        "descripcion": "La colección de stickers más colorididos y brillantes, podés elegir holográficos o vinílicos",
+        "descripcion": "La colección de stickers más coloridjsonidjsonos y brillantes, podés elegir holográficos o vinílicos",
         "precio": 2000,
         "imagen": "sticker2.jpg",
-        "stock": 5,
+        "stock": 12,
         "categoria": "sticker"
     },
     {
-        "id": 13,
+        "idjson": 13,
         "nombre": "Stickers",
-        "descripcion": "La colección de stickers más colorididos y brillantes, podés elegir holográficos o vinílicos",
+        "descripcion": "La colección de stickers más coloridjsonidjsonos y brillantes, podés elegir holográficos o vinílicos",
         "precio": 2000,
         "imagen": "sticker3.jpg",
-        "stock": 5,
+        "stock": 7,
         "categoria": "sticker"
     },
     {
-        "id": 14,
+        "idjson": 14,
         "nombre": "Stickers",
-        "descripcion": "La colección de stickers más colorididos y brillantes, podés elegir holográficos o vinílicos",
+        "descripcion": "La colección de stickers más coloridjsonidjsonos y brillantes, podés elegir holográficos o vinílicos",
         "precio": 2000,
         "imagen": "sticker.jpg",
         "stock": 5,
         "categoria": "sticker4"
     },
     {
-        "id": 15,
+        "idjson": 15,
         "nombre": "Imprimibles",
         "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
         "precio": 3000,
@@ -135,7 +135,7 @@
         "categoria": "imprimible"
     },
     {
-        "id": 16,
+        "idjson": 16,
         "nombre": "Imprimibles",
         "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
         "precio": 3000,
@@ -144,7 +144,7 @@
         "categoria": "imprimible"
     },
     {
-        "id": 17,
+        "idjson": 17,
         "nombre": "Imprimibles",
         "descripcion": "Diseñé este kit imprimible a color especialmente para vos, para que organices tu día, semana, mes, trabajos y tareas pendientes... y viene con stickers súper lindos!",
         "precio": 3000,
@@ -153,12 +153,12 @@
         "categoria": "imprimible"
     },
     {
-        "id": 18,
+        "idjson": 18,
         "nombre": "Cuadernos",
         "descripcion": "Pensados y diseñados para alegrar tus días y acompañarte en la facu, colegio, haciendo journaling y escribiendo tus declaraciones positivas. Tamaños: A5 & A6",
         "precio": 5000,
         "imagen": "cuadernos2.jpg",
-        "stock": 2,
+        "stock": 4,
         "categoria": "cuaderno"
     }
 ]

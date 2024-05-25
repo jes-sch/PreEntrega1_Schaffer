@@ -29,11 +29,19 @@ const Checkout = () => {
         const buyer = {nombre:nombre, email:email, telephone:telephone};
         const items = cart.map(item => ({id:item.id, title:item.nombre, price:item.precio}));
         const order = {buyer:buyer, items:items, total:calcularTotal()}
-        const db = getFirestore();
+        /* const db = getFirestore();
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then(data => {
             setOrderId(data.id);
-        });
+        }); */
+
+        const db = getFirestore();
+        const itemsCollection = collection(db, "items");
+        arrayProductos.forEach(item => {
+            addDoc(itemsCollection, item);
+        })
+        console.log("PRODUCTOS COMPLETAMENTE CARGADOS");
+
     }
     
     return (
