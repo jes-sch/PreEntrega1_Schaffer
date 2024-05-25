@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import arrayProductos from "./json/productos.json";
-import { addDoc, collection, getFirestore} from "firebase/firestore";
+//import arrayProductos from "./json/productos.json";
+import { addDoc, collection, getDocs, getFirestore} from "firebase/firestore";
 
 const Checkout = () => {
     const [cart, setCart] = useState([]);
@@ -9,7 +9,7 @@ const Checkout = () => {
     const [telephone, setTelephone] = useState("");
     const [orderId, setOrderId] = useState("");
 
-    useEffect(() => {
+    /* useEffect(() => {
         const promesa = new Promise(resolve => {
             setTimeout(() => {
                 resolve(arrayProductos.filter(item => item.precio < 2500));
@@ -19,6 +19,17 @@ const Checkout = () => {
         promesa.then(respuesta => {
             setCart(respuesta);
         })
+    }, []); */
+
+        // Cargo los productos vía FireStore
+    useEffect(() => {
+        const db = getFirestore();
+        const itemsCollection = collection(db, "items");
+        getDocs(itemsCollection).then(snapShot => {
+            if (snapShot.size > 0) {
+                setCart(snapShot.docs.map(item => ({id:item.id, ...item.data()})));
+            }
+        });
     }, []);
 
     const calcularTotal = () => {
