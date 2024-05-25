@@ -33,7 +33,7 @@ const CartContextProvider = ({children}) => {
     }
 
     const getSumProducts = () => {
-        return cart.reduce((acum, item) => acum += item.quantity * item.price, 0);
+        return cart.reduce((acum, item) => acum += item.quantity * item.precio, 0);
     }
 
     return (
