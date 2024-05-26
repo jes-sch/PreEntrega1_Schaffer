@@ -9,7 +9,6 @@ const ItemDetailContainer = () => {
     const [visible, setVisible] = useState(true);
     const {id} = useParams();
 
-      // Acceso a un Producto por ID en Firestore
     useEffect(() => {
         const db = getFirestore();
         const docRef = doc(db, "items", id);

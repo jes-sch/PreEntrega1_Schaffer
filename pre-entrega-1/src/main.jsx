@@ -10,12 +10,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCwdObuWHe-35sb2Rteffrgn_5ICXP2BRs",
-  authDomain: "tienda-de-lari.firebaseapp.com",
-  projectId: "tienda-de-lari",
-  storageBucket: "tienda-de-lari.appspot.com",
-  messagingSenderId: "35580614923",
-  appId: "1:35580614923:web:fca58512450a0712372a0e"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
