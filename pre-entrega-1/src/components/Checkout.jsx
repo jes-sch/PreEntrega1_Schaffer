@@ -75,7 +75,7 @@ const Checkout = () => {
                         <tbody>
                             {cart.map(item => (
                                 <tr key={item.id}>
-                                    <td><img src={item.imagen} alt={item.nombre} style={{color:"LightSeaGreen"}} width={80} /></td>
+                                    <td><img className="img-fluid rounded-3" src={"../../images/" + item.imagen} alt={item.nombre} style={{color:"LightSeaGreen"}} width={130} /></td>
                                     <td className="fw-bold" style={{color:"Orchid"}}>{item.nombre}</td>
                                     <td className="text-end fw-bold" style={{color:"Orchid"}}>$ {item.precio}</td>
                                 </tr>

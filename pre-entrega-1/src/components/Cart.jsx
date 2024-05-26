@@ -33,7 +33,7 @@ const Cart = () => {
                                 </tr>
                                 {cart.map(item => (
                                 <tr key={item.id}>
-                                    <td className="fw-bold" style={{color:"DarkViolet"}}><img src={item.imagen} alt={item.nombre} width={122} /></td>
+                                    <td className="fw-bold" style={{color:"DarkViolet"}}><img className="fw-bold img-fluid rounded-3" src={"../../images/" + item.imagen} alt={item.nombre} width={150} /></td>
                                     <td className="align-middle text-center fw-bold" style={{color:"DarkViolet"}}>{item.nombre}</td>
                                     <td className="align-middle text-center fw-bold" style={{color:"DarkViolet"}}>$ {item.precio}</td>
                                     <td className="align-middle text-center fw-bold" style={{color:"DarkViolet"}}>{item.quantity}</td>
