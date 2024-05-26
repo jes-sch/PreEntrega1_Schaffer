@@ -38,7 +38,7 @@ const Cart = () => {
                                     <td className="align-middle text-center fw-bold" style={{color:"DarkViolet"}}>$ {item.precio}</td>
                                     <td className="align-middle text-center fw-bold" style={{color:"DarkViolet"}}>{item.quantity}</td>
                                     <td className="align-middle text-center fw-bold" style={{color:"DarkViolet"}}>$ {item.quantity * item.precio}</td>
-                                    <td className="align-middle text-end"><img src={trash} width={24} alt="Eliminar producto" title="Eliminar producto" onClick={() => {removeItem(item.id)}} /></td>
+                                    <td className="align-middle text-end"><img src={trash} width={24} onClick={() => {removeItem(item.id)}} /></td>
                                 </tr>
                                 ))}
                                 <tr className="align-middle">

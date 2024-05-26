@@ -81,8 +81,8 @@ const Checkout = () => {
                                 </tr>
                             ))}
                                 <tr>
-                                    <td style={{color:"OrLightSeaGreenchid"}} colSpan={2}><b>Total</b></td>
-                                    <td className="text-end"><b>$ {getSumProducts()}</b></td>
+                                    <td className="fw-bold" style={{color:"LightSeaGreen"}} colSpan={2}><b>TOTAL: </b></td>
+                                    <td className="fw-bold text-end" style={{color:"LightSeaGreen"}}>$ {getSumProducts()}</td>
                                 </tr>
                         </tbody>
                     </table>    
